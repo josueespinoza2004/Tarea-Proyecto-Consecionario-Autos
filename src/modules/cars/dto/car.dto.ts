@@ -1,5 +1,12 @@
 import { ApiProperty, PartialType } from '@nestjs/swagger';
-import { IsInt, IsNumber, IsOptional, IsPositive, IsString, MinLength } from 'class-validator';
+import {
+  IsInt,
+  IsNumber,
+  IsOptional,
+  IsPositive,
+  IsString,
+  MinLength,
+} from 'class-validator';
 
 export class CreateCarDto {
   @IsOptional()
@@ -40,7 +47,7 @@ export class CreateCarDto {
   @IsPositive()
   @IsOptional()
   @ApiProperty()
-  precio: number;
+  price: number;
 
   @IsOptional()
   @ApiProperty()

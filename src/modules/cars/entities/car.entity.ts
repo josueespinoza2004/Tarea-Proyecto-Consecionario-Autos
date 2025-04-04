@@ -20,7 +20,7 @@ export class Car {
   @Column({ type: 'int4', default: 0 })
   stock: number;
 
-  @Column({ type: 'int4' })
+  @Column({ type: 'float', default: 0 })
   price: number;
 
   @Column({ type: 'bool', default: true })
