@@ -51,7 +51,7 @@ export class CarsService {
     await this.carRepository.remove(car);
 
     return {
-      message: `Automóvil con ID ${id} ha sido eliminado correctamente`,
+      message: `Automóvil de marca ${car.brand} ha sido eliminado correctamente`,
     };
   }
 
